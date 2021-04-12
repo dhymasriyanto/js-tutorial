@@ -17,6 +17,19 @@ function loopThis() {
   }
 }
 
+function catchTheSus() {
+  for (let index = 0; index < game.suspects.length; index++) {
+    for (const key in game.suspects[i]) {
+       if (game.suspects[i][key] === "Rusty") {
+          console.log("Found /'em!") 
+       }
+       else{
+           console.log("Next time!")
+       } 
+    }
+  }
+}
+
 function loopThen() {
   for (const key in object) {
     if (Object.hasOwnProperty.call(object, key)) {
