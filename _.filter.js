@@ -74,6 +74,10 @@ const videoData = [
   },
 ];
 
-_.filter(videoData, function (suspectObject) {
+const suspects = _.filter(videoData, function (suspectObject) {
     return suspectObject.present
 });
+
+const suspectNames = _.map(suspects, suspect => {
+  return suspect.name
+})
